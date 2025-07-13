@@ -1,0 +1,40 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "C:\\Users\\CROMA\\Desktop\\secure‑file‑uploads\\contracts\\contracts\\FileStorage.sol": {
+      "lastModificationDate": 1752203066707,
+      "contentHash": "35b4b1b3d5ccb5cfd9791cb5b1891cfc",
+      "sourceName": "contracts/FileStorage.sol",
+      "solcConfig": {
+        "version": "0.8.17",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FileStorage"
+      ]
+    }
+  }
+}

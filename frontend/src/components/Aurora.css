@@ -1,0 +1,10 @@
+/* Aurora.css */
+.aurora-container {
+  position: fixed;       /* 👈 Important */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;           /* 👈 Push behind your content */
+  pointer-events: none;  /* 👈 Allows clicks to pass through */
+}

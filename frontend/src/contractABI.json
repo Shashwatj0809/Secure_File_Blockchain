@@ -1,0 +1,35 @@
+{
+  "abi": [
+    {
+      "inputs": [
+        { "internalType": "string", "name": "cid", "type": "string" },
+        { "internalType": "bytes32", "name": "hash", "type": "bytes32" }
+      ],
+      "name": "store",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        { "internalType": "string", "name": "cid", "type": "string" },
+        { "internalType": "bytes32", "name": "hash", "type": "bytes32" }
+      ],
+      "name": "verify",
+      "outputs": [{ "internalType": "bool", "name": "", "type": "bool" }],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        { "indexed": false, "internalType": "string", "name": "cid", "type": "string" },
+        { "indexed": false, "internalType": "bytes32", "name": "hash", "type": "bytes32" },
+        { "indexed": true,  "internalType": "address", "name": "uploader", "type": "address" },
+        { "indexed": false, "internalType": "uint256","name": "ts", "type": "uint256" }
+      ],
+      "name": "Stored",
+      "type": "event"
+    }
+  ]
+}

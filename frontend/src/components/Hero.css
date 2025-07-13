@@ -1,0 +1,116 @@
+/* Hero section base */
+.hero-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Overlay content on top of Aurora */
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  padding: 2rem;
+  z-index: 2;
+  width: 90%;
+  max-width: 1000px;
+}
+
+/* Main title */
+.hero-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Feature cards container */
+.features {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+/* Individual feature box */
+.feature-box {
+  flex: 1 1 28%;
+  min-width: 260px;
+  padding: 1.5rem 1.2rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+  border: 1.5px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  color: #f0f0f0;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255, 255, 255, 0.25);
+}
+
+/* Titles inside feature box */
+.feature-box strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
+}
+
+/* CTA Button */
+.hero-button {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 12px;
+  border: none;
+  background-color: #4f8cff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.hero-button:hover {
+  background-color: #3b6edc;
+  transform: scale(1.03);
+}
+.tech-marquee {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 2rem;
+  padding: 0.5rem 0;
+  background: rgba(255, 255, 255, 0.05);
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: scroll-marquee 20s linear infinite;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.marquee-content span {
+  margin: 0 2rem;
+  display: inline-block;
+}
+
+@keyframes scroll-marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
